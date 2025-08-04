@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    background-image: url('interiors.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.left {
+    flex: 1;
+}
+.right {
+    flex: 1.2;
+    background-color: white;
+}
+.heading {
+    margin-top: 80px;
+    margin-left: 5px;
+}
+.main {
+    background-color: gray;
+    height: 250px;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
