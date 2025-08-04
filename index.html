@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing-Up Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
-        <div class="left"></div>
-        <div class="right">
-            <h3 class="heading">Transform your space with elegance and purpose.
-Join us to get personalized interior design inspirations straight to your inbox. <br><br> You <i>know</i> you want to</h3>
-        <div class="main">  
-            <div class="field">
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <h3 class="heading">
+        Transform your space with elegance and purpose.<br />
+        Join us to get personalized interior design inspirations straight to your inbox.
+        <br /><br />
+        You <i>know</i> you want to.
+      </h3>
+
+      <form>
+        <div class="main">
+          <div class="field">
             <label for="first-name">First Name: </label>
-            <input id="first-name" type="text">
-            </div>
+            <input id="first-name" type="text" minlength="3" maxlength="10" required />
+          </div>
 
-            <div class="field">
+          <div class="field">
             <label for="last-name">Last Name: </label>
-            <input id="last-name" type="text">
-            </div>
-<br>
-            <div class="field">
+            <input id="last-name" type="text" minlength="3" maxlength="10" />
+          </div>
+
+          <div class="field">
             <label for="email">Email: </label>
-            <input id="email" type="email">
-            </div>
+            <input id="email" type="email" required />
+          </div>
 
-            <div class="field">
+          <div class="field">
             <label for="phone">Phone Number:</label>
-            <input id="phone" type="number">
-            </div>
-<br>
-            <div class="field">
-            <label for="password">Password </label>
-            <input id="password
-            " type="password">
-            </div>
+            <input id="phone" type="tel" pattern="^0\d{3} \d{7}$" required />
+          </div>
 
-            <div class="field">
+          <div class="field">
+            <label for="password">Password: </label>
+            <input id="password" type="password" required />
+          </div>
+
+          <div class="field">
             <label for="confirm">Confirm Password: </label>
-            <input id="confirm" type="password">
-            </div>
+            <input id="confirm" type="password" required />
+          </div>
         </div>
+
+        <div class="form-footer">
+          <button type="submit" class="login-button">Log in!</button>
+          <p class="account-text">
+            Already have an account? <a href="login.html">Sign in!</a>
+          </p>
         </div>
+      </form>
     </div>
+  </div>
 </body>
 </html>

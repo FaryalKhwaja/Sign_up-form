@@ -1,12 +1,18 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: black;
+}
+html {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 .container {
     display: flex;
     height: 100vh;
-    background-image: url('interiors.jpg');
+    background-image: url('interior4.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -22,7 +28,7 @@ body {
     margin-left: 5px;
 }
 .main {
-    background-color: gray;
+    background-color: #BFDBFE;
     height: 250px;
 }
 .main {
@@ -35,4 +41,46 @@ body {
   display: flex;
   flex-direction: column;
   padding: 15px;
+}
+input {
+    border: gray;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: #F3F4F6;
+}
+input:focus {
+    box-shadow: 0 0 6px white;
+    border: none;
+}
+.form-footer {
+    text-align: right;
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2563EB;
+    margin: 6px;
+}
+.login-button:hover {
+    box-shadow: 0 0 10px burlywood;
+}
+.form-footer a {
+    text-decoration: none;
+    color: #3B82F6;
+}
+.form-footer a:hover {
+    text-decoration: underline;
+}
+.form-footer a:visited {
+    color: #10B981;
+}
+input:invalid {
+    border-color: red;
 }
